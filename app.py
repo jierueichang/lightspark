@@ -45,7 +45,7 @@ def index():
         new_post = request.form['newpost']
         if new_post == '':
             flash('Post has no content')
-            return redirect(url_for(index))
+            return redirect(url_for('index'))
         new_author = request.form['author']
         new_font = request.form['font']
         timestamp = datetime.date.today().strftime('%y-%m-%d')
@@ -63,7 +63,7 @@ def delete():
     db.session.commit()
     db.create_all()
     flash('action completed')
-    return redirect(url_for(index))
+    return redirect(url_for('index'))
 
 if __name__ == '__main__':
     db.create_all()
