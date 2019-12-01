@@ -36,7 +36,7 @@ def get_posts():
     posts = []
     for spost in sposts:
         posts.append([spost.content.split('\n'),spost.font,spost.author,spost.timestamp])
-    return posts
+    return posts[::-1]
 
 @app.route('/',methods=['GET','POST'])
 def index():
