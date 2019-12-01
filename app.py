@@ -47,7 +47,6 @@ def index():
         new_font = request.form['font']
         timestamp = datetime.date.today().strftime('%y-%m-%d')
         add_post(new_post,new_author,new_font,timestamp)
-        print 'added post'
         flash('New post added successfully')
         return redirect(url_for('index'))
     return render_template('index.html',posts=posts)
