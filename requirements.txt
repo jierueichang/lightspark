@@ -12,7 +12,7 @@ future==0.17.1
 gunicorn==19.9.0
 itsdangerous==1.1.0
 jaraco.itertools==4.4.2
-Jinja2==2.10.3
+Jinja2==2.11.3
 pickleshare==0.7.4
 Pillow==6.2.1
 pipenv==2018.11.26
